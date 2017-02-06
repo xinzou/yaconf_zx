@@ -1,6 +1,11 @@
 # yaconf_zx
 yaconf php 修改版   支持多级目录读取配置
 
+# 多级目录配置读取方式
+
+php7 -r 'var_dump(Yaconf::get("aaa/bbb/bar.base.parent"));'
+使用'/'读取目录对应配置信息
+
 #Yaconf - Yet Another Configurations Container
 [![Build Status](https://secure.travis-ci.org/laruence/yaconf.png)](https://travis-ci.org/laruence/yaconf)
 
@@ -148,12 +153,6 @@ array(2) {
 ````
 
 Children section has inherited values in base sections, and children is able to override the values they want.
-
-
-# 多级目录配置读取方式
-
-php7 -r 'var_dump(Yaconf::get("aaa/bbb/bar.base.parent"));'
-使用'/'读取目录对应配置信息
 
 
 
