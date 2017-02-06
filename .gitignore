@@ -1,0 +1,30 @@
+# Object files
+*.o
+
+# Libraries
+*.lib
+*.a
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Visual Studio
+
+*.opensdf
+*.sdf
+*.sln
+*.vcxproj
+*.vcxproj.filters
+bin/
+tmp/
+.vs/
+Debug/
+Release/
